@@ -5,6 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuevo producto</title>
+    <style>
+		body{font-family: Arial; background-color: #18A383; box-sizing: border-box;}
+
+		form{
+			background-color: white;
+			border-radius: 3px;
+			color: #999;
+			font-size: 0.8em;
+			padding: 20px;
+			margin: 0 auto;
+			width: 300px;
+		}
+		input, textarea{
+			border: 0;
+			outline: none;
+			width: 280px;
+		}
+		.field{
+			border: solid 1px #ccc;
+			padding: 10px;			
+		}
+		.field:focus{
+			border-color: #18A383;
+		}
+		.center-content{
+			text-align: center;
+		}
+	</style>
 </head>
 <body>
     <nav>
@@ -32,13 +60,15 @@
         </div>
     </nav>
     <form>
-        <label for="fname">Name:</label>
-        <input type="text" id="name" name="name">
-        <label for="price">Price:</label>
-        <input type="number" id="price" name="price">
-        <label for="inventory">Inventory:</label>
-        <input type="number" id="inventory" name="inventory">
-        <button type="button" onclick=""">"Create product"</button>
-      </form>
+        <label for="fname">Name:</label><br>
+        <input type="text" class ="field" id="name" name="name" required><br>
+        <label for="price">Price:</label><br>
+        <input type="number" class ="field" id="price" name="price" required><br>
+        <label for="inventory">Inventory:</label><br>
+        <input type="number" class ="field" id="inventory" name="inventory" required><br>
+        <p class="center-content">
+            <button type="button" class="btn btn-green" onclick=""">"Create product"</button><br>
+        </p>
+    </form>
 </body>
 </html>
