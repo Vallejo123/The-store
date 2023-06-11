@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: white);
+    background: white;
     line-height: 2.2;
     font-size: 0.875rem;
 }
@@ -22,7 +22,9 @@ nav {
 }
 
 .menu {
-
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
 }
 
 .menu a {
@@ -39,7 +41,7 @@ nav {
     padding-left: 1.5rem;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 425px) {
 
     .nav-main {
         max-width: 1170px;
@@ -65,7 +67,9 @@ nav {
         background: transparent;
     }
 
-    
+    .fa-bars {
+        display: none;
+    }
 
     .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -112,4 +116,21 @@ nav {
         display: flex;
         justify-content: center;
     }
+}
+.fa-bars {
+    font-size: 1.5rem;
+    color:#e94949;
+    cursor: pointer;
+}
+.fa-bars:hover {
+    color: black
+}
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.show-menu {
+    height: 10rem;
 }
